@@ -21,45 +21,45 @@ function writePassword() {
   
 }
 
-function generatePassword () {
+function generatePassword() {
   // This next line of code is used to tell the user to add a value, and if they don't add a correct value. They will be reminded.
-  var firstPrompt = prompt("How long would you like your password to be? Choose between 8 to 128 characters.");
-  if (!firstPrompt) {alert("Please add a value");} else if (firstPrompt <8 || firstPrompt > 128) {prompt ("Please add a value higher than 8 or lower than 128");
+  var passwordLength = prompt("How long would you like your password to be? Choose between 8 to 128 characters.");
+  if (!passwordLength) {alert("Please add a value");} else if (passwordLength <8 || passwordLength > 128) {prompt ("Please add a value higher than 8 or lower than 128");
   } else {
     // This next line of code is used to ask the user how they would like their password to be like.
-    var secondPrompt = confirm("Do you want numbers?");
-    var thirdPrompt = confirm("Do you want special characters?");
-    var fourthPrompt = confirm("Do you want upper case characters?");
-    var fifthPrompt = confirm("Do you want lower case characters?");
-    };
+    var passwordNumber = confirm("Do you want numbers?");
+    var passwordChar = confirm("Do you want special characters?");
+    var passwordUpper = confirm("Do you want upper case characters?");
+    var passwordLower = confirm("Do you want lower case characters?");
+    }
   // This next line of code is used in case no option has been chosen for the password generator
-  if (!secondPrompt && !thirdPrompt && !fourthPrompt  && !fifthPrompt) {alert("Please choose a criteria");}
+  if (!passwordNumber && !passwordChar && !passwordUpper  && !passwordLower) {alert("Please choose a criteria");}
   // These line of code is if the user selects the all the options available for the password
-  else if (secondPrompt && thirdPrompt && fourthPrompt && fifthPrompt) {choices = spChar.concat (number, upperCase, lowerCase);}
+  else if (passwordNumber && passwordChar && passwordUpper && passwordLower) {choices = spChar.concat (number, upperCase, lowerCase);}
   // These next lines of code are if the user selects only 3 different combinations for their password
-  else if (secondPrompt && thirdPrompt && fourthPrompt) {choices = number.concat (upperCase, spChar);}
-  else if (secondPrompt && thirdPrompt && fifthPrompt) {choices = number.concat (upperCase, lowerCase);}
-  else if (fifthPrompt && thirdPrompt && fourthPrompt) {choises = lowerCase.concat (upperCase, spChar);}
+  else if (passwordNumber && passwordChar && passwordUpper) {choices = number.concat (upperCase, spChar);}
+  else if (passwordNumber && passwordChar && passwordLower) {choices = number.concat (upperCase, lowerCase);}
+  else if (passwordLower && passwordChar && passwordUpper) {choices = lowerCase.concat (upperCase, spChar);}
   // These next lines of code are only if the user selects 2 different possible combinations for their password
-  else if (secondPrompt && thirdPrompt) {choices = number.concat (spChar);}
-  else if (secondPrompt && fourthPrompt) {choices = number.concat (upperCase);}
-  else if (secondPrompt && fifthPrompt) {choises = number.concat (lowerCase);}
-  else if (thirdPrompt && fourthPrompt) {choices = spChar.concat (upperCase);}
-  else if (thirdPrompt && fifthPrompt) {choices = spChar.concat (lowerCase);}
-  else if (fourthPrompt && fifthPrompt) {choices = upperCase.concat (lowerCase);}
+  else if (passwordNumber && passwordChar) {choices = number.concat (spChar);}
+  else if (passwordNumber && passwordUpper) {choices = number.concat (upperCase);}
+  else if (passwordNumber && passwordLower) {choices = number.concat (lowerCase);}
+  else if (passwordChar && passwordUpper) {choices = spChar.concat (upperCase);}
+  else if (passwordChar && passwordLower) {choices = spChar.concat (lowerCase);}
+  else if (passwordUpper && passwordLower) {choices = upperCase.concat (lowerCase);}
   // These next lines of code are only if the user selects only one option for the password
-  else if (secondPrompt) {choices = number;}
-  else if (thirdPrompt) {choices = spChar;}
-  else if (fourthPrompt) {choices = upperCase;}
-  else if (fifthPrompt) {choices = lowerCase;}
-
+  else if (passwordNumber) {choices = number;}
+  else if (passwordChar) {choices = spChar;}
+  else if (passwordUpper) {choices = upperCase;}
+  else if (passwordLower) {choices = lowerCase;}
+  // empty array that will contain the new empty password
   var randomPassword = [];
   // This next line of code is the loop requiered for the generation of the password
-  for (var i = 0; i<firstPrompt; i++) {
-    var allChoices = choices [Math.floor(Math.random()* choices.length)]; randomPassword.push(allChoices);
+  for (var i = 0; i<passwordLength; i++) {
+    var allChoices = choices [Math.floor(Math.random()* choices.lenght)]; randomPassword.push(allChoices);
   }
+  return randomPassword.join("")
   }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
+// Add event listener to generate button 
+generate.addEventListener ("click", writePassword)
