@@ -7,7 +7,7 @@ var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 // Array containing letters from a to z in lowercase
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","y","z",];
 // Array containing the special characters for the password
-var spChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+var spChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 // This variable is used for the concanation of the variables later
 var choices;
 
@@ -36,9 +36,10 @@ function generatePassword() {
   if (!passwordNumber && !passwordChar && !passwordUpper  && !passwordLower) {alert("Please choose a criteria");}
   // These line of code is if the user selects the all the options available for the password
   else if (passwordNumber && passwordChar && passwordUpper && passwordLower) {choices = spChar.concat (number, upperCase, lowerCase);}
-  // These next lines of code are if the user selects only 3 different combinations for their password
+  // These next lines of code are if the user selects only 4 different combinations for their password
   else if (passwordNumber && passwordChar && passwordUpper) {choices = number.concat (upperCase, spChar);}
-  else if (passwordNumber && passwordChar && passwordLower) {choices = number.concat (upperCase, lowerCase);}
+  else if (passwordNumber && passwordLower && passwordUpper) {choices = number.concat (upperCase, lowerCase);}
+  else if (passwordNumber && passwordChar && passwordLower) {choices = number.concat (spChar, lowerCase);}
   else if (passwordLower && passwordChar && passwordUpper) {choices = lowerCase.concat (upperCase, spChar);}
   // These next lines of code are only if the user selects 2 different possible combinations for their password
   else if (passwordNumber && passwordChar) {choices = number.concat (spChar);}
@@ -56,7 +57,7 @@ function generatePassword() {
   var randomPassword = [];
   // This next line of code is the loop requiered for the generation of the password
   for (var i = 0; i<passwordLength; i++) {
-    var allChoices = choices [Math.floor(Math.random()* choices.lenght)]; randomPassword.push(allChoices);
+    var allChoices = choices [Math.floor(Math.random()* choices.length)]; randomPassword.push(allChoices);
   }
   return randomPassword.join("")
   }
