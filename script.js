@@ -55,7 +55,7 @@ function generatePassword () {
 
   var randomPassword = [];
   // This next line of code is the loop requiered for the generation of the password
-  for (var i = 0; 1<firstPrompt; i++) {
+  for (var i = 0; i<firstPrompt; i++) {
     var allChoices = choices [Math.floor(Math.random()* choices.length)]; randomPassword.push(allChoices);
   }
   }
