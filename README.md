@@ -16,22 +16,22 @@ Here I will provide some screenshots of the functioning app
 ![asking password length](https://i.imgur.com/RZ8PFqe.png)
 
 2. App asking user to input a value between 8 and 128 if the user did not input any value between those numbers.
-![asking for the correct value](https://drive.google.com/file/d/1UYoWL6zOqDTNEHFn-YsLxC2Tezv7c_yo/view?usp=sharing)
+![asking for the correct value](https://i.imgur.com/p9K1Asp.png)
 
 3. App asking the user to please input a correct value for password length, if the user does not again enter a correct value.
-![asking for the correct value](https://drive.google.com/file/d/1bktyZ3McTneh0qtAiklqsLnqb9Ng2-ay/view?usp=sharing)
+![asking for the correct value](https://i.imgur.com/99vA4Ut.png)
 
 4. App asking user for numbers.
-![Asking for number](https://drive.google.com/file/d/127ws_oed6GlIRSz9GYMpvV4zlLf6GScW/view?usp=sharing)
+![Asking for number](https://i.imgur.com/2lB0DfD.png)
 
 5. App asking for special characters
-![asking for special characters](https://drive.google.com/file/d/15ERIaIpajiuse-TQ1GvDBGKUFebUploI/view?usp=sharing)
+![asking for special characters](https://i.imgur.com/PG3DEZu.png)
 
 6. App asking for upper characters.
-![asking for upper characters](https://drive.google.com/file/d/1aEs_qsbAX-WX3AtPs05teBMoeycqnJew/view)
+![asking for upper characters](https://i.imgur.com/qaJ7Ysb.png)
 
 7. App asking for lower characters.
-![asking for a lower characters](https://drive.google.com/file/d/1X5hFlBRaNfjYC22q-cvMpzOBjgg4c1l8/view?usp=sharing)
+![asking for a lower characters](https://i.imgur.com/ovK1t75.png)
 
 8. App showing the password on the box within the site, password is 10 characters long.
-![complete password 10 characters long](https://drive.google.com/file/d/18DQDWYN_HxPfPmLjAm8j58c2_tEvQN9s/view?usp=sharing)
+![complete password 10 characters long](https://i.imgur.com/o0tiycD.png)
