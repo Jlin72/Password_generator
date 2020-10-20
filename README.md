@@ -1,4 +1,4 @@
-# Password_generator
+# Password generator
 This is a repository I created for a random password generator as requested by a client. This app will ask the user how long they want their password to be, the password can only be from 8 to 128 characters. After which, the app will ask the user if they want upper cases, lower cases or special characters. Lastly, once the user inputs what they want for their password, the password will appear on a box within the website.
 
 # Link to the website containing the password generator
