@@ -13,7 +13,7 @@ This is version 1.0 for this password generator
 Here I will provide some screenshots of the functioning app
 
 1. The app asking the user how long they want their password to be.
-![asking password length](https://imgur.com/RZ8PFqe)
+![asking password length](https://i.imgur.com/RZ8PFqe.png)
 
 2. App asking user to input a value between 8 and 128 if the user did not input any value between those numbers.
 ![asking for the correct value](https://drive.google.com/file/d/1UYoWL6zOqDTNEHFn-YsLxC2Tezv7c_yo/view?usp=sharing)
