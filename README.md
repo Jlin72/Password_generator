@@ -28,7 +28,7 @@ Here I will provide some screenshots of the functioning app
 ![asking for special characters](https://drive.google.com/file/d/15ERIaIpajiuse-TQ1GvDBGKUFebUploI/view?usp=sharing)
 
 6. App asking for upper characters.
-![asking for upper characters](https://drive.google.com/file/d/1aEs_qsbAX-WX3AtPs05teBMoeycqnJew/view?usp=sharing)
+![asking for upper characters](https://drive.google.com/file/d/1aEs_qsbAX-WX3AtPs05teBMoeycqnJew/view)
 
 7. App asking for lower characters.
 ![asking for a lower characters](https://drive.google.com/file/d/1X5hFlBRaNfjYC22q-cvMpzOBjgg4c1l8/view?usp=sharing)
